@@ -32,6 +32,10 @@ save.on("click", function () {
 
   var confirmation = $("<div>").text("Appointment logged in Local Storage");
   $("header").append(confirmation);
+
+  setTimeout(function () {
+    confirmation.remove();
+  }, 3000);
 });
 
 $(".time-block").each(function () {
